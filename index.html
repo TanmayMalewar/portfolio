@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tanmay | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* NAV */
+    nav {
+      background: #2c3e50;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav ul a:hover { color: white; }
+
+    /* HERO */
+    #hero {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .avatar-placeholder {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #3d5166;
+      border: 3px solid #3498db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      margin: 0 auto 20px;
+    }
+
+    #hero h1 { font-size: 32px; margin-bottom: 10px; }
+    #hero p  { font-size: 16px; color: #aaa; margin-bottom: 25px; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      margin: 5px;
+    }
+
+    .btn:hover { background: #217dbb; }
+    .btn.outline {
+      background: transparent;
+      border: 2px solid #3498db;
+    }
+    .btn.outline:hover { background: #3498db; }
+
+    /* SECTIONS */
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      border-left: 4px solid #3498db;
+      padding-left: 12px;
+    }
+
+    /* ABOUT */
+    #about p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* SKILLS */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #2c3e50;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .skill.learning {
+      background: transparent;
+      border: 2px solid #2c3e50;
+      color: #2c3e50;
+    }
+
+    .skills-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    /* PROJECTS */
+    .project-card {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .project-card h3 { font-size: 17px; margin-bottom: 8px; color: #2c3e50; }
+    .project-card p  { font-size: 14px; color: #666; line-height: 1.7; }
+
+    .project-tag {
+      display: inline-block;
+      margin-top: 12px;
+      background: #eaf4fb;
+      color: #3498db;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* CONTACT */
+    #contact { text-align: center; }
+    #contact p { font-size: 15px; color: #555; margin-bottom: 20px; }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      nav ul { gap: 12px; }
+      #hero h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Tanmay</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero">
+    <div class="avatar-placeholder">T</div>
+    <h1>Hi, I'm Tanmay 👋</h1>
+    <p>B.Tech AI Student · Currently Learning & Building</p>
+    <a href="#projects" class="btn">My Work</a>
+    <a href="#contact" class="btn outline">Contact Me</a>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a 3rd year B.Tech student in Artificial Intelligence at GH Raisoni College of Engineering, Nagpur.
+      I'm at the beginning of my coding journey — currently learning Python, HTML, CSS and JavaScript.
+      I like building small things and improving my skills step by step every day.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">Python (Basics)</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript (Basics)</span>
+      <span class="skill learning">DSA (Learning)</span>
+      <span class="skill learning">Git (Learning)</span>
+    </div>
+    <p class="skills-note">* Outlined ones = currently learning 🚀</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>🌐 Personal Portfolio Website</h3>
+      <p>
+        This is my first project — a simple responsive portfolio website built using
+        HTML and CSS. I made this to practice what I've learned and to have a place
+        to showcase my work as I keep growing.
+      </p>
+      <span class="project-tag">HTML</span>
+      <span class="project-tag">CSS</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I'm open to learning opportunities and connecting with people. Feel free to reach out!</p>
+    <div class="contact-links">
+      <a href="mailto:tanmay@email.com" class="btn">✉ Email Me</a>
+      <a href="https://github.com/tanmay" target="_blank" class="btn outline">GitHub</a>
+      <a href="https://linkedin.com/in/tanmay" target="_blank" class="btn outline">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Tanmay · Made with ❤️ · Nagpur, India</p>
+  </footer>
+
+</body>
+</html>
